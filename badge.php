@@ -1,6 +1,6 @@
 <?php
 // Discord badge workaround
-if (isset($_GET['id']) && $_GET['id'] == 'XXXXXXXXXXXXXXXXXX')
+if (isset($_GET['id']) && ($_GET['id'] == 'ALLOWED_ID_1_HERE' || $_GET['id'] == 'ALLOWED_ID_2_HERE'))
 {
     // Fetch data
     $members_json = json_decode(file_get_contents('https://discord.com/api/guilds/'.$_GET['id'].'/widget.json'), true);
